@@ -19,7 +19,6 @@ fun TabView(tabBarItems: List<TabBarItem>, navController: NavController) {
     }
 
     NavigationBar {
-        // looping over each tab to generate the views and navigation for each item
         tabBarItems.forEachIndexed { index, tabBarItem ->
             NavigationBarItem(
                 selected = selectedTabIndex == index,
